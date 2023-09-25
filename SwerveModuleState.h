@@ -20,6 +20,12 @@ class SwerveModuleState {
             speed_ = 0;
             angleRadians_ = 0;
         }
+        Rotation2d getRot2d() {
+            return Rotation2d(angleRadians_);
+        }
+        double getSpeedMPS() {
+            return speed_;
+        }
 
 
 
